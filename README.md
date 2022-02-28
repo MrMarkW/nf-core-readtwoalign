@@ -1,7 +1,7 @@
-# ![nf-core/readtwoalign](docs/images/nf-core-readtwoalign_logo_light.png#gh-light-mode-only) ![nf-core/readtwoalign](docs/images/nf-core-readtwoalign_logo_dark.png#gh-dark-mode-only)
+# ![mrmarkw/readtwoalign](docs/images/nf-core-readtwoalign_logo_light.png#gh-light-mode-only) ![mrmarkw/readtwoalign](docs/images/nf-core-readtwoalign_logo_dark.png#gh-dark-mode-only)
 
-[![GitHub Actions CI Status](https://github.com/nf-core/readtwoalign/workflows/nf-core%20CI/badge.svg)](https://github.com/nf-core/readtwoalign/actions?query=workflow%3A%22nf-core+CI%22)
-[![GitHub Actions Linting Status](https://github.com/nf-core/readtwoalign/workflows/nf-core%20linting/badge.svg)](https://github.com/nf-core/readtwoalign/actions?query=workflow%3A%22nf-core+linting%22)
+[![GitHub Actions CI Status](https://github.com/mrmarkw/readtwoalign/workflows/nf-core%20CI/badge.svg)](https://github.com/mrmarkw/readtwoalign/actions?query=workflow%3A%22nf-core+CI%22)
+[![GitHub Actions Linting Status](https://github.com/mrmarkw/readtwoalign/workflows/nf-core%20linting/badge.svg)](https://github.com/mrmarkw/readtwoalign/actions?query=workflow%3A%22nf-core+linting%22)
 [![AWS CI](https://img.shields.io/badge/CI%20tests-full%20size-FF9900?labelColor=000000&logo=Amazon%20AWS)](https://nf-co.re/readtwoalign/results)
 [![Cite with Zenodo](http://img.shields.io/badge/DOI-10.5281/zenodo.XXXXXXX-1073c8?labelColor=000000)](https://doi.org/10.5281/zenodo.XXXXXXX)
 
@@ -17,7 +17,7 @@
 ## Introduction
 
 <!-- TODO nf-core: Write a 1-2 sentence summary of what data the pipeline is for and what it does -->
-**nf-core/readtwoalign** is a bioinformatics best-practice analysis pipeline for simple reads to aligned pipeline.
+**mrmarkw/readtwoalign** is a bioinformatics best-practice analysis pipeline for simple reads to aligned pipeline.
 
 The pipeline is built using [Nextflow](https://www.nextflow.io), a workflow tool to run tasks across multiple compute infrastructures in a very portable manner. It uses Docker/Singularity containers making installation trivial and results highly reproducible. The [Nextflow DSL2](https://www.nextflow.io/docs/latest/dsl2.html) implementation of this pipeline uses one container per process which makes it much easier to maintain and update software dependencies. Where possible, these processes have been submitted to and installed from [nf-core/modules](https://github.com/nf-core/modules) in order to make them available to all nf-core pipelines, and to everyone within the Nextflow community!
 
@@ -40,7 +40,7 @@ On release, automated continuous integration tests run the pipeline on a full-si
 3. Download the pipeline and test it on a minimal dataset with a single command:
 
     ```console
-    nextflow run nf-core/readtwoalign -profile test,YOURPROFILE
+    nextflow run mrmarkw/readtwoalign -profile test,YOURPROFILE
     ```
 
     Note that some form of configuration will be needed so that Nextflow knows how to fetch the required software. This is usually done in the form of a config profile (`YOURPROFILE` in the example command above). You can chain multiple config profiles in a comma-separated string.
@@ -55,16 +55,16 @@ On release, automated continuous integration tests run the pipeline on a full-si
     <!-- TODO nf-core: Update the example "typical command" below used to run the pipeline -->
 
     ```console
-    nextflow run nf-core/readtwoalign -profile <docker/singularity/podman/shifter/charliecloud/conda/institute> --input samplesheet.csv --genome GRCh37
+    nextflow run mrmarkw/readtwoalign -profile <docker/singularity/podman/shifter/charliecloud/conda/institute> --input samplesheet.csv --genome GRCh37
     ```
 
 ## Documentation
 
-The nf-core/readtwoalign pipeline comes with documentation about the pipeline [usage](https://nf-co.re/readtwoalign/usage), [parameters](https://nf-co.re/readtwoalign/parameters) and [output](https://nf-co.re/readtwoalign/output).
+The mrmarkw/readtwoalign pipeline comes with documentation about the pipeline [usage](https://nf-co.re/readtwoalign/usage), [parameters](https://nf-co.re/readtwoalign/parameters) and [output](https://nf-co.re/readtwoalign/output).
 
 ## Credits
 
-nf-core/readtwoalign was originally written by mark.whelan@invitae.com.
+mrmarkw/readtwoalign was originally written by mark.whelan@invitae.com.
 
 We thank the following people for their extensive assistance in the development of this pipeline:
 
@@ -79,7 +79,7 @@ For further information or help, don't hesitate to get in touch on the [Slack `#
 ## Citations
 
 <!-- TODO nf-core: Add citation for pipeline after first release. Uncomment lines below and update Zenodo doi and badge at the top of this file. -->
-<!-- If you use  nf-core/readtwoalign for your analysis, please cite it using the following doi: [10.5281/zenodo.XXXXXX](https://doi.org/10.5281/zenodo.XXXXXX) -->
+<!-- If you use  mrmarkw/readtwoalign for your analysis, please cite it using the following doi: [10.5281/zenodo.XXXXXX](https://doi.org/10.5281/zenodo.XXXXXX) -->
 
 <!-- TODO nf-core: Add bibliography of tools and data used in your pipeline -->
 An extensive list of references for the tools used by the pipeline can be found in the [`CITATIONS.md`](CITATIONS.md) file.
